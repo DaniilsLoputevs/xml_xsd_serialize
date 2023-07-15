@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees>
+    <employees>
+        <id>1</id>
+        <fullName>Иванов Иван Иванович</fullName>
+        <birthday>15.02.1984</birthday>
+        <organizations>
+            <id>1</id>
+            <name>ООО "Рога и копыта"</name>
+            <createdAt/>
+            <status>OPEN</status>
+            <employees>1</employees>
+            <employees>5</employees>
+        </organizations>
+    </employees>
+    <employees>
+        <id>2</id>
+        <fullName>Смирнова Елена Александровна</fullName>
+        <birthday>29.07.1991</birthday>
+        <organizations>
+            <id>2</id>
+            <name>ЗАО "Прогресс"</name>
+            <createdAt/>
+            <status>CLOSE</status>
+            <employees>2</employees>
+            <employees>5</employees>
+        </organizations>
+        <organizations>
+            <id>3</id>
+            <name>ООО "Солнечный мир"</name>
+            <createdAt/>
+            <status>OPEN</status>
+            <employees>2</employees>
+            <employees>3</employees>
+            <employees>5</employees>
+        </organizations>
+    </employees>
+    <employees>
+        <id>3</id>
+        <fullName>Петров Сергей Владимирович</fullName>
+        <birthday>10.04.1987</birthday>
+        <organizations>
+            <id>3</id>
+            <name>ООО "Солнечный мир"</name>
+            <createdAt/>
+            <status>OPEN</status>
+            <employees>2</employees>
+            <employees>3</employees>
+            <employees>5</employees>
+        </organizations>
+        <organizations>
+            <id>4</id>
+            <name>АО "Спутник"</name>
+            <createdAt/>
+            <status>CLOSE</status>
+            <employees>3</employees>
+            <employees>5</employees>
+        </organizations>
+        <organizations>
+            <id>5</id>
+            <name>НКО "Благотворительность"</name>
+            <createdAt/>
+            <status>OPEN</status>
+            <employees>3</employees>
+            <employees>5</employees>
+        </organizations>
+    </employees>
+    <employees>
+        <id>4</id>
+        <fullName>Соколова Анна Игоревна</fullName>
+        <birthday>05.09.1996</birthday>
+    </employees>
+    <employees>
+        <id>5</id>
+        <fullName>Кузнецов Дмитрий Алексеевич</fullName>
+        <birthday>22.11.1983</birthday>
+        <organizations>
+            <id>1</id>
+            <name>ООО "Рога и копыта"</name>
+            <createdAt/>
+            <status>OPEN</status>
+            <employees>1</employees>
+            <employees>5</employees>
+        </organizations>
+        <organizations>
+            <id>2</id>
+            <name>ЗАО "Прогресс"</name>
+            <createdAt/>
+            <status>CLOSE</status>
+            <employees>2</employees>
+            <employees>5</employees>
+        </organizations>
+        <organizations>
+            <id>3</id>
+            <name>ООО "Солнечный мир"</name>
+            <createdAt/>
+            <status>OPEN</status>
+            <employees>2</employees>
+            <employees>3</employees>
+            <employees>5</employees>
+        </organizations>
+        <organizations>
+            <id>4</id>
+            <name>АО "Спутник"</name>
+            <createdAt/>
+            <status>CLOSE</status>
+            <employees>3</employees>
+            <employees>5</employees>
+        </organizations>
+        <organizations>
+            <id>5</id>
+            <name>НКО "Благотворительность"</name>
+            <createdAt/>
+            <status>OPEN</status>
+            <employees>3</employees>
+            <employees>5</employees>
+        </organizations>
+    </employees>
+    <employees>
+        <id>6</id>
+        <fullName>Николаева Ольга Александровна</fullName>
+        <birthday>17.09.1988</birthday>
+    </employees>
+</employees>
