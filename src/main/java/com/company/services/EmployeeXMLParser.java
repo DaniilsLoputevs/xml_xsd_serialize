@@ -4,7 +4,6 @@ import com.company.models.Employee;
 import com.company.models.Organization;
 
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Т.к. постановка дана именно на Сериализуем & Десериализуем пару из {@link Employee} & {@link Organization}, то
@@ -21,10 +20,15 @@ public interface EmployeeXMLParser {
     
     /**
      * Т.к. в рамках ТЗ нет уточнений, в таком типе мы хотим использовать данные(List, Set, Queue, Custom Collection).
-     * Решил использовать базовый вариант с List<Employee>, так же можно сделать Set<Employee>,
+     * Решил использовать базовый вариант с Collection<Employee>, так же можно сделать Set<Employee>,
      * если требуется собрать только Уникальные элементы.
      *
      * @param employees XML String
      */
     Collection<Employee> deserialize(String employees);
+    
+    /**
+     * @return XSD String
+     */
+    String generateSchemaForSupportedClass();
 }

@@ -1,4 +1,4 @@
-package com.company.xml.adapter;
+package com.company.jaxb.wrappers;
 
 import com.company.models.Employee;
 import jakarta.xml.bind.annotation.XmlRootElement;

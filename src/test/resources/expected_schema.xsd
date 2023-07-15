@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="employee" type="employee"/>
+
+  <xs:element name="employees" type="employees"/>
+
+  <xs:element name="organization" type="organization"/>
+
+  <xs:complexType name="employees">
+    <xs:sequence>
+      <xs:element name="employees" type="employee" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="employee">
+    <xs:sequence>
+      <xs:element name="id" type="xs:ID" minOccurs="0"/>
+      <xs:element name="fullName" type="xs:string" minOccurs="0"/>
+      <xs:element name="birthday" type="xs:string" minOccurs="0"/>
+      <xs:element name="organizations" type="organization" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="organization">
+    <xs:sequence>
+      <xs:element name="id" type="xs:long" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="createdAt" type="xs:string" minOccurs="0"/>
+      <xs:element name="status" type="status" minOccurs="0"/>
+      <xs:element name="employees" type="xs:IDREF" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OPEN"/>
+      <xs:enumeration value="CLOSE"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

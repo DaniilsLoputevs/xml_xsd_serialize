@@ -7,7 +7,7 @@
         <organizations>
             <id>1</id>
             <name>ООО "Рога и копыта"</name>
-            <createdAt/>
+            <createdAt>10.03.2005</createdAt>
             <status>OPEN</status>
             <employees>1</employees>
             <employees>5</employees>
@@ -20,7 +20,7 @@
         <organizations>
             <id>2</id>
             <name>ЗАО "Прогресс"</name>
-            <createdAt/>
+            <createdAt>05.12.1998</createdAt>
             <status>CLOSE</status>
             <employees>2</employees>
             <employees>5</employees>
@@ -28,7 +28,7 @@
         <organizations>
             <id>3</id>
             <name>ООО "Солнечный мир"</name>
-            <createdAt/>
+            <createdAt>21.07.2010</createdAt>
             <status>OPEN</status>
             <employees>2</employees>
             <employees>3</employees>
@@ -42,7 +42,7 @@
         <organizations>
             <id>3</id>
             <name>ООО "Солнечный мир"</name>
-            <createdAt/>
+            <createdAt>21.07.2010</createdAt>
             <status>OPEN</status>
             <employees>2</employees>
             <employees>3</employees>
@@ -51,7 +51,7 @@
         <organizations>
             <id>4</id>
             <name>АО "Спутник"</name>
-            <createdAt/>
+            <createdAt>15.09.1995</createdAt>
             <status>CLOSE</status>
             <employees>3</employees>
             <employees>5</employees>
@@ -59,7 +59,7 @@
         <organizations>
             <id>5</id>
             <name>НКО "Благотворительность"</name>
-            <createdAt/>
+            <createdAt>30.11.2012</createdAt>
             <status>OPEN</status>
             <employees>3</employees>
             <employees>5</employees>
@@ -77,7 +77,7 @@
         <organizations>
             <id>1</id>
             <name>ООО "Рога и копыта"</name>
-            <createdAt/>
+            <createdAt>10.03.2005</createdAt>
             <status>OPEN</status>
             <employees>1</employees>
             <employees>5</employees>
@@ -85,7 +85,7 @@
         <organizations>
             <id>2</id>
             <name>ЗАО "Прогресс"</name>
-            <createdAt/>
+            <createdAt>05.12.1998</createdAt>
             <status>CLOSE</status>
             <employees>2</employees>
             <employees>5</employees>
@@ -93,7 +93,7 @@
         <organizations>
             <id>3</id>
             <name>ООО "Солнечный мир"</name>
-            <createdAt/>
+            <createdAt>21.07.2010</createdAt>
             <status>OPEN</status>
             <employees>2</employees>
             <employees>3</employees>
@@ -102,7 +102,7 @@
         <organizations>
             <id>4</id>
             <name>АО "Спутник"</name>
-            <createdAt/>
+            <createdAt>15.09.1995</createdAt>
             <status>CLOSE</status>
             <employees>3</employees>
             <employees>5</employees>
@@ -110,7 +110,7 @@
         <organizations>
             <id>5</id>
             <name>НКО "Благотворительность"</name>
-            <createdAt/>
+            <createdAt>30.11.2012</createdAt>
             <status>OPEN</status>
             <employees>3</employees>
             <employees>5</employees>

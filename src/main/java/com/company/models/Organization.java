@@ -1,6 +1,6 @@
 package com.company.models;
 
-import com.company.xml.adapter.LocalDateXMLAdapter;
+import com.company.jaxb.adapters.LocalDateXMLAdapter;
 import jakarta.xml.bind.annotation.*;
 import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import lombok.*;

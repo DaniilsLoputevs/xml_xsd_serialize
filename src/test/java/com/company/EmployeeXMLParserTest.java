@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Такой подход позволяет быстро и понятно расширять тесты для новых реализаций.
  */
 public interface EmployeeXMLParserTest {
-    static final EmployeeXMLParserTestDataSet DATA = new EmployeeXMLParserTestDataSet();
+    EmployeeXMLParserTestDataSet DATA = new EmployeeXMLParserTestDataSet();
     
     /**
      * Метод getter для получения Тестируемого объекта в ходе написания тест-кейсов.
@@ -53,8 +53,8 @@ public interface EmployeeXMLParserTest {
      * Предположительно, далее этот String XML отправится в сеть(HTTP socket, massage broker и т.д.)
      */
     @Test default void serialize() {
-        List<Employee> input = DATA.getTestEmployees();
-        String expected = DATA.getExpectedXML();
+        List<Employee> input = DATA.getInputEmployees();
+        String expected = DATA.getExpectedDataXML();
         String rsl = this.getImpl().serialize(input);
         System.out.println(rsl);
         assertEquals(expected, rsl);
@@ -65,17 +65,17 @@ public interface EmployeeXMLParserTest {
      * Предположительно, этот String XML мым получили из сети(HTTP socket, massage broker и т.д.)
      */
     @Test default void deserialize() {
-        String input = DATA.getExpectedXML();
-        List<Employee> expected = DATA.getTestEmployees();
+        String input = DATA.getExpectedDataXML();
+        List<Employee> expected = DATA.getInputEmployees();
         Collection<Employee> rsl = this.getImpl().deserialize(input);
         assertEquals(expected, rsl);
     }
-//    @Test default void generateSchema() {
-//        String input = DATA.getExpectedXML();
-//        List<Employee> expected = DATA.getTestEmployees();
-//        Collection<Employee> rsl = this.getImpl().deserialize(input);
-//        assertEquals(expected, rsl);
-//    }
+    
+    @Test default void generateSchema() {
+        String expected = DATA.getExpectedSchemaXSD();
+        String rsl = this.getImpl().generateSchemaForSupportedClass();
+        assertEquals(expected, rsl);
+    }
     
     
 }
