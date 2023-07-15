@@ -33,9 +33,7 @@ public class EmployeeXMLParserImpl implements EmployeeXMLParser {
     @SneakyThrows
     @Override public String serialize(Collection<Employee> employees) {
         var str = new StringWriter();
-        var wrapper = new Employees();
-        wrapper.setEmployees(employees);
-        marshaller.marshal(wrapper, str);
+        marshaller.marshal(new Employees(employees), str);
         return str.toString();
     }
     

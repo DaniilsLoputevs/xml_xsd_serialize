@@ -62,7 +62,7 @@ public interface EmployeeXMLParserTest {
     
     /**
      * Десериализуем String XML в коллекцию {@link Employee}.
-     * Предположительно, этот String XML мым получили из сети(HTTP socket, massage broker и т.д.)
+     * Предположительно, этот String XML мы получили из сети(HTTP socket, massage broker и т.д.)
      */
     @Test default void deserialize() {
         String input = DATA.getExpectedDataXML();
@@ -71,11 +71,14 @@ public interface EmployeeXMLParserTest {
         assertEquals(expected, rsl);
     }
     
+    /**
+     * Генерируем String XSD.
+     * Предположительно, этот String XSD мы запишем в файл.
+     */
     @Test default void generateSchema() {
         String expected = DATA.getExpectedSchemaXSD();
         String rsl = this.getImpl().generateSchemaForSupportedClass();
         assertEquals(expected, rsl);
     }
-    
     
 }

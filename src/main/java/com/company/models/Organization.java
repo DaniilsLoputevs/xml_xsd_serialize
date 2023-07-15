@@ -19,16 +19,16 @@ import java.util.List;
 public class Organization {
     
     private Long id;
-    
     private String name;
+    
     /**
      * 1 - В каком формате на проекте Храним/Используем Дату, решил использовать LocalDate,
      * как наиболее распространённый вариант.
      * 2 - т.к. в рамках ТЗ нет уточнений какой формат у Входящих данных, решил использовать dd.MM.YYYY
      */
-    
     @XmlJavaTypeAdapter(value = LocalDateXMLAdapter.class)
     private LocalDate createdAt;
+    
     /**
      * Можно делать boolean, однако мир не предсказуем и может сдаться что Организация активна,
      * но не доступна по каким-то причинам, в таком случаи Enum смотрится как выгодное решение, а boolean нет.
